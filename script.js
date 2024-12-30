@@ -10,14 +10,14 @@ document.getElementById("imgweather").src = `https:${responseCurrent.condition.i
 
 document.getElementById("tem").innerText = `${responseCurrent.temp_c
 }°C`;
-document.getElementById("location").innerText = `Location:${responseLocation.country}`
+document.getElementById("location").innerText = `Location:${responseLocation.country} , ${responseLocation.name} , ${responseLocation.region}`
 document.getElementById("item1").innerText = `${responseCurrent.feelslike_c}°C (Centigrade Feel)`; 
 
 document.getElementById("item2").innerText = `${responseCurrent.feelslike_f}°F (Fahrenheit Feel)`;
 
 document.getElementById("item3").innerText = `${responseCurrent.humidity}% Humidity`;
 
-document.getElementById("item4").innerText = `${responseCurrent.pressure_mb}mb Pressure`;
+document.getElementById("item4").innerText = `${responseCurrent.pressure_mb} mb Pressure`;
 
 document.getElementById("item5").innerText = `${responseCurrent.vis_km} km Visibility`;
 
