@@ -19,41 +19,47 @@ header h1{
     padding: 15px 0px;
 }
 .sec1{
-display: flex;
-justify-content: center;
-margin-top: 54px;
+        display: flex;
+        justify-content: center;
+        margin-top: 54px;
 }
 .sec1  button{
     font-size: 15px;
     width:150px;
-    height: 38px;
+    height: 36px;
     border:none;
     background-color: #36b7db;
     color: white;
     border-radius:4px;
     cursor: pointer;
 }
-input::placeholder{
+#tem{
+    color: rgb(66, 38, 230);
+}
+ .iconInp input::placeholder{
     font-style: italic;
     text-align: center;
     font-size: 16px;
 }
-/* .sec1{
+.iconInp{
     position: relative;
 }
-.sec1 i{
+
+.iconInp #cancel{
     position: absolute;
-   left: 700px;
-   top: 10px;
-   opacity: 0.66;
-} */
-.sec1 input{
+    right: 18px;
+    opacity: 0.4;
+    width: 0px;
+    background-color:transparent;
+    color: black;
+}
+.sec1 .iconInp input{
     border:none;    
     width: 340px;
     border-radius:4px;
-    font-size:16px ;
+    font-size:16px;
+    height: 36px;
     text-align: center;
-   
 }
 .sec2{
     margin-top: 60px;
@@ -81,7 +87,7 @@ input::placeholder{
     margin-top: 30px;
     align-items: center;
 }
-#item1 ,#item2,#item3,#item4,#item5,#item6{
+#item1 ,#item2,#item3,#item4,#item5,#item6,#location{
     text-align: center;
     min-width: 250px;
     min-height: 80px;
@@ -89,9 +95,19 @@ input::placeholder{
     background-color: white;
     border-radius: 5px;
     padding-top: 29px;
+    color: rgb(14, 121, 85);
+    font-weight: bold;
 }
  #imgweather{
     transform: scale(2.5);
+}
+
+#ref{
+    width: 33px;
+    height: 32px;
+    background-color: rgb(40 146 185);
+   margin-left: 4px;
+   margin-top: 1px;
 }
 
 
