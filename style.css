@@ -48,10 +48,17 @@ header h1{
 .iconInp #cancel{
     position: absolute;
     right: 18px;
-    opacity: 0.4;
-    width: 0px;
+    opacity: 0;
+    top: 11px;
     background-color:transparent;
     color: black;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+}
+.sec1 .iconInp input:focus + #cancel{
+    opacity:0.4;
+    cursor: pointer;
 }
 .sec1 .iconInp input{
     border:none;    
@@ -105,7 +112,7 @@ header h1{
 
 #ref{
     width: 33px;
-    height: 32px;
+    height: 34px;
     background-color: rgb(40 146 185);
    margin-left: 4px;
    margin-top: 1px;

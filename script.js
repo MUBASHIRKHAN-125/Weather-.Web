@@ -1,6 +1,11 @@
 function result(){
    let cityUser = document.getElementById("Weatherinp").value;
 
+   if(!cityUser){
+      alert("Please fill the input!");
+      return;
+   }
+
    axios.get(`https://api.weatherapi.com/v1/current.json?key=d347dfb1a00b4f86add45435242510&q=${cityUser}`)
 .then(function(response){
 console.log("Response" , response.data);
@@ -24,7 +29,8 @@ document.getElementById("item5").innerText = `${responseCurrent.vis_km} km Visib
 document.getElementById("item6").innerText = `${responseCurrent.wind_kph} kph Wind Speed`;
  })
  .catch(function(error){
-    console.log("Error" , error);
+   console.log("Error" , error);
+   alert("Error fetching weather data. Please check the input!");
  });
 
 }
