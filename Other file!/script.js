@@ -8,7 +8,7 @@ function result(){
 
    axios.get(`https://api.weatherapi.com/v1/current.json?key=d347dfb1a00b4f86add45435242510&q=${cityUser}`)
 .then(function(response){
-console.log("Response" , response.data);
+// console.log("Response" , response.data);
 let responseCurrent = response.data.current;
 let  responseLocation = response.data.location;
 document.getElementById("imgweather").src = `https:${responseCurrent.condition.icon}`;
@@ -28,8 +28,8 @@ document.getElementById("item5").innerText = `${responseCurrent.vis_km} km Visib
 
 document.getElementById("item6").innerText = `${responseCurrent.wind_kph} kph Wind Speed`;
  })
- .catch(function(error){
-   console.log("Error" , error);
+ .catch(function(){
+   // console.log("Error" , error);
    alert("Error fetching weather data. Please check the input!");
  });
 
